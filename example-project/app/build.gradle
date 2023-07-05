@@ -1,5 +1,12 @@
 plugins {
     id 'java'
+    id 'application'
+}
+application {
+    mainClass = 'org.grandle.sample.Main'
+    applicationDefaultJvmArgs = ['-Dgreeting.language=en']
+    executableDir = 'custom_bin_dir'
+    mainClass = 'hexlet.code.App'
 }
 
 group = 'hexlet.code'
@@ -7,6 +14,10 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+compileJava {
+    options.release = 17
 }
 
 dependencies {
