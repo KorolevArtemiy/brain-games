@@ -1,15 +1,24 @@
 package hexlet.code;
 import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
+        System.out.println("Please enter the game number and press Enter.");
+        System.out.println("1 - Greet");
+        System.out.println("2 - Even");
+        System.out.println("0 - Exit");
+        System.out.print("Your choice: ");
         Scanner scanner = new Scanner(System.in);
         String userChoice = scanner.next();
-        System.out.println("Please enter the game number and press Enter. \n 1 - Greet \n 0 - Exit\n");
-        System.out.println("Your choice: " + userChoice );
-        if (userChoice.equals("1")) {
+        int num = Integer.parseInt(userChoice);
+        if ((0 < num) && (num < 7)) {
             System.out.println("Welcome to the Brain Games!");
             Cli.name();
-
+            /*switch (num) {
+                case 2:
+                    Even.even();
+                    break;
+            }*/
         }
     }
 }

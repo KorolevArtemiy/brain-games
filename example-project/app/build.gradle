@@ -3,6 +3,11 @@ plugins {
     id 'application'
     id 'checkstyle'
 }
+
+run {
+    standardInput = System.in
+}
+
 application {
     mainClass = 'org.grandle.sample.Main'
     applicationDefaultJvmArgs = ['-Dgreeting.language=en']
@@ -27,8 +32,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-run {
-    standardInput = System.in
 }
