@@ -8,17 +8,18 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
+
         Scanner scanner = new Scanner(System.in);
-        String userChoice = scanner.next();
-        int num = Integer.parseInt(userChoice);
-        if ((0 < num) && (num < 7)) {
+        int userChoice = scanner.nextInt();
+
+        if ((0 < userChoice) && (userChoice < 7)) {
             System.out.println("Welcome to the Brain Games!");
             Cli.name();
-            /*switch (num) {
+            switch (userChoice) {
                 case 2:
-                    Even.even();
-                    break;
-            }*/
+                    Even.game();
+                break;
+            }
         }
     }
 }
