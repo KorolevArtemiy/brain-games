@@ -19,13 +19,13 @@ public class Even {
                 System.out.println("Correct!");
             } else {
                 if (userAnswer.equals("yes")) {
-                    System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'" +
-                            "\nLet's try again, " + Cli.userName + "!");
+                    System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'"
+                            + "\nLet's try again, " + Cli.userName + "!");
                     break;
                 }
                 if (userAnswer.equals("no")) {
-                    System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'" +
-                            "\nLet's try again, " + Cli.userName + "!");
+                    System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'"
+                            + "\nLet's try again, " + Cli.userName + "!");
                     break;
 
                 }

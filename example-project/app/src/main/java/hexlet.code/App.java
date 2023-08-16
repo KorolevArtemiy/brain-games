@@ -11,14 +11,12 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
         int userChoice = scanner.nextInt();
-
-        if ((0 < userChoice) && (userChoice < 7)) {
-            System.out.println("Welcome to the Brain Games!");
+        if (0 < userChoice && userChoice < 7) {
             Cli.name();
-            switch (userChoice) {
-                case 2:
-                    Even.game();
-                break;
+        }
+        switch (userChoice) {
+            case 2 -> Even.game();
+            default -> {
             }
         }
     }
