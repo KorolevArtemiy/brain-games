@@ -10,17 +10,17 @@ public class Even {
         for (int q = 1; q <= 3; q++) {
             int value = (int) (Math.random() * 100);
 
-            System.out.println("Question " + q + ": " + value);
-            System.out.print("Your answer: ");
-
-            String userAnswer = scanner.next();
-
             String ask;
             if (value % 2 == 0) {
                 ask = "yes";
             } else {
                 ask = "no";
             }
+
+            System.out.println("Question " + q + ": " + value);
+            System.out.print("Your answer: ");
+
+            String userAnswer = scanner.next();
 
             if (hexlet.code.Engine.wrong(ask, userAnswer)) {
                 break;
