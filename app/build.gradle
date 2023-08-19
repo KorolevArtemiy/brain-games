@@ -29,3 +29,6 @@ compileJava {
 test {
     useJUnitPlatform()
 }
+task wrapper(type: Wrapper) {
+    gradleVersion = '8.2.1'
+}
