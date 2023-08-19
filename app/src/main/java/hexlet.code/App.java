@@ -22,10 +22,11 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         int userChoice = scanner.nextInt();
-        if (0 < userChoice && userChoice < 7) {
+        if (1 < userChoice && userChoice < 7) {
             Cli.name();
         }
         switch (userChoice) {
+            case 1 -> System.out.println("Welcome to the Brain Games!");
             case 2 -> Even.game2();
             case 3 -> Calc.game3();
             case 4 -> GCD.game4();
