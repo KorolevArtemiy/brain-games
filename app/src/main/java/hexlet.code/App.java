@@ -20,6 +20,7 @@ public class App {
         System.out.print("Your choice: ");
 
         Scanner scanner = new Scanner(System.in);
+
         int userChoice = scanner.nextInt();
         if (0 < userChoice && userChoice < 7) {
             Cli.name();
