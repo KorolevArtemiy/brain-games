@@ -1,2 +1,2 @@
 run-dist:
-	@./build/install/app/bin/brain-games
+	@./build/install/app/bin/app
