@@ -15,9 +15,9 @@ public class GCD {
             int gcd = min;
 
             while (gcd != 0) {
-               gcd = max % min;
-               max = min;
-               min = gcd;
+                gcd = max % min;
+                max = min;
+                min = gcd;
             }
 
             System.out.println("Question " + q + ": " + value1 + "  " + value2);
