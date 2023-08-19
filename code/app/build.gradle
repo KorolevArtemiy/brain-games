@@ -4,10 +4,6 @@ plugins {
     id 'checkstyle'
 }
 
-run {
-    standardInput = System.in
-}
-
 application {
     mainClass = 'org.grandle.sample.Main'
     applicationDefaultJvmArgs = ['-Dgreeting.language=en']
@@ -24,6 +20,10 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.2')
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+compileJava {
+    options.release = 20
 }
 
 test {
