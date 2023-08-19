@@ -6,11 +6,11 @@ public class Even {
     public static void game2() {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         Scanner scanner = new Scanner(System.in);
-        String ask = "no";
 
         for (int q = 1; q <= 3; q++) {
             int value = (int) (Math.random() * 100);
 
+            String ask = "no";
             if (value % 2 == 0) {
                 ask = "yes";
             }
