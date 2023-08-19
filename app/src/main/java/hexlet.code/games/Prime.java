@@ -13,12 +13,12 @@ public class Prime {
             if (value < 2) {
                 ask = "no";
             }
-                for (int i = 2; i < value; i++) {
-                    if (value % i == 0) {
-                        ask = "no";
-                        break;
-                    }
+            for (int i = 2; i < value; i++) {
+                if (value % i == 0) {
+                    ask = "no";
+                    break;
                 }
+            }
             System.out.println("Question " + q + ": " + value);
             System.out.print("Your answer: ");
 
