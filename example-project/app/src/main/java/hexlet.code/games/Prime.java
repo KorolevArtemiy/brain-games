@@ -10,16 +10,15 @@ public class Prime {
         for (int q = 1; q <= 3; q++) {
             int value = (int) (Math.random() * 100);
             String ask = "yes";
-            if (((value % 2 != 0) && (value > 2)) || (value == 2)) {
-                for (int i = 3; i < value; i += 2) {
+            if (value < 2) {
+                ask = "no";
+            }
+                for (int i = 2; i < value; i++) {
                     if (value % i == 0) {
                         ask = "no";
                         break;
                     }
                 }
-            } else {
-                ask = "no";
-            }
             System.out.println("Question " + q + ": " + value);
             System.out.print("Your answer: ");
 
