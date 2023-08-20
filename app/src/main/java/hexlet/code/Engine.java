@@ -11,4 +11,9 @@ public class Engine {
             return true;
         }
     }
+    public static void congratulations(int q) {
+        if (q == 3) {
+            System.out.println("Congratulations, " + Cli.userName + "!");
+        }
+    }
 }

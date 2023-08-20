@@ -28,6 +28,7 @@ public class Prime {
                 break;
             }
 
+            hexlet.code.Engine.congratulations(q);
         }
     }
 }

@@ -23,6 +23,8 @@ public class Even {
             if (hexlet.code.Engine.wrong(ask, userAnswer)) {
                 break;
             }
+
+            hexlet.code.Engine.congratulations(q);
         }
     }
 }
