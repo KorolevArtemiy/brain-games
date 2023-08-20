@@ -19,7 +19,7 @@ public class Calc {
                 default -> null;
             };
 
-            System.out.println("Question " + q + ": " + value1 + " " + chArray[index] + " " + value2);
+            System.out.println("Question: " + value1 + " " + chArray[index] + " " + value2);
             System.out.print("Your answer: ");
             String userAnswer = scanner.next();
 

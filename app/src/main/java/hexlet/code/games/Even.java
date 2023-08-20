@@ -15,7 +15,7 @@ public class Even {
                 ask = "yes";
             }
 
-            System.out.println("Question " + q + ": " + value);
+            System.out.println("Question: " + value);
             System.out.print("Your answer: ");
 
             String userAnswer = scanner.next();

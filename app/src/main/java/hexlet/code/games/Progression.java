@@ -14,7 +14,7 @@ public class Progression {
             int skip = (int) (Math.random() * qua) * step + first;
             int max = qua * step + first;
             String ask = String.valueOf(skip);
-            System.out.print("Question " + q + ": ");
+            System.out.print("Question: ");
 
             for (int j = first; j <= max; j += step) {
                 if (j == skip) {
