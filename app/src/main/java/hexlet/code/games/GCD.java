@@ -20,7 +20,7 @@ public class GCD {
                 min = gcd;
             }
 
-            System.out.println("Question: " + value1 + "  " + value2);
+            System.out.println("Question: " + value1 + " " + value2);
             System.out.print("Your answer: ");
             String userAnswer = scanner.next();
 
