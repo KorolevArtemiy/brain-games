@@ -28,7 +28,7 @@ public class App {
         final int prime = 6;
 
         int userChoice = scanner.nextInt();
-        if (0 < userChoice && userChoice <= 6) {
+        if (0 < userChoice && userChoice <= prime) {
             Cli.name();
         }
         switch (userChoice) {

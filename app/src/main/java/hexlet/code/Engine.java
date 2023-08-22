@@ -1,9 +1,6 @@
 package hexlet.code;
 
 public class Engine {
-    public static int turns() {
-        return 3;
-    }
 
     public static Boolean wrong(String ask, String ans) {
         if (ask.equals(ans)) {
@@ -17,9 +14,9 @@ public class Engine {
     }
 
     public static void congratulations(int q) {
-        if (q == turns()) {
+        final int turn = 3;
+        if (q == turn) {
             System.out.println("Congratulations, " + Cli.userName + "!");
         }
     }
 }
-

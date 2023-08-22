@@ -10,8 +10,9 @@ public class Calc {
         char[] chArray = new char[]{'+', '-', '*'};
 
         final int randMax = 100;
+        final int turns = 3;
 
-        for (int q = 1; q <= Engine.turns(); q++) {
+        for (int q = 1; q <= turns; q++) {
             int value1 = (int) (Math.random() * randMax);
             int value2 = (int) (Math.random() * randMax);
             int index = (int) Math.floor(Math.random() * chArray.length);

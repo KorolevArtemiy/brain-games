@@ -10,8 +10,9 @@ public class GCD {
         Scanner scanner = new Scanner(System.in);
 
         final int randMax = 100;
+        final int turns = 3;
 
-        for (int q = 1; q <= Engine.turns(); q++) {
+        for (int q = 1; q <= turns; q++) {
             int value1 = 1 + (int) (Math.random() * randMax);
             int value2 = 1 + (int) (Math.random() * randMax);
             int minNum = Math.min(value1, value2);

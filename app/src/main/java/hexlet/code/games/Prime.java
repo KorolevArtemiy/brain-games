@@ -10,8 +10,9 @@ public class Prime {
         Scanner scanner = new Scanner(System.in);
 
         final int randMax = 100;
+        final int turns = 3;
 
-        for (int q = 1; q <= Engine.turns(); q++) {
+        for (int q = 1; q <= turns; q++) {
             int value = (int) (Math.random() * randMax);
             String ask = "yes";
             if (value < 2) {

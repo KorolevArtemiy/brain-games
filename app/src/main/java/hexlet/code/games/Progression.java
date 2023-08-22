@@ -15,8 +15,9 @@ public class Progression {
         final int stepMinRand = 2;
         final int firstMaxRand = 50;
         final int firstMinRand = 2;
+        final int turns = 3;
 
-        for (int q = 1; q <= Engine.turns(); q++) {
+        for (int q = 1; q <= turns; q++) {
             int qua = quaMinRand + (int) (Math.random() * quaMaxRand);
             int step = stepMinRand + (int) (Math.random() * stepMaxRand);
             int first = firstMinRand + (int) (Math.random() * firstMaxRand);
