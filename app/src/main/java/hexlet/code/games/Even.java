@@ -9,7 +9,7 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         Scanner scanner = new Scanner(System.in);
 
-        int randMax = 100;
+        final int randMax = 100;
 
         for (int q = 1; q <= Engine.turns(); q++) {
             int value = (int) (Math.random() * randMax);

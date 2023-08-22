@@ -9,12 +9,12 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
         Scanner scanner = new Scanner(System.in);
 
-        int quaMaxRand = 10;
-        int quaMinRand = 5;
-        int stepMaxRand = 10;
-        int stepMinRand = 2;
-        int firstMaxRand = 50;
-        int firstMinRand = 2;
+        final int quaMaxRand = 10;
+        final int quaMinRand = 5;
+        final int stepMaxRand = 10;
+        final int stepMinRand = 2;
+        final int firstMaxRand = 50;
+        final int firstMinRand = 2;
 
         for (int q = 1; q <= Engine.turns(); q++) {
             int qua = quaMinRand + (int) (Math.random() * quaMaxRand);

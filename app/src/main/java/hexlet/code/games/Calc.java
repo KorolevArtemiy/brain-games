@@ -9,7 +9,7 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
         char[] chArray = new char[]{'+', '-', '*'};
 
-        int randMax = 100;
+        final int randMax = 100;
 
         for (int q = 1; q <= Engine.turns(); q++) {
             int value1 = (int) (Math.random() * randMax);

@@ -21,16 +21,22 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
 
+        final int even = 2;
+        final int calc = 3;
+        final int gcd = 4;
+        final int progression = 5;
+        final int prime = 6;
+
         int userChoice = scanner.nextInt();
         if (0 < userChoice && userChoice <= 6) {
-            Engine.name();
+            Cli.name();
         }
         switch (userChoice) {
-            case 2 -> Even.game2();
-            case 3 -> Calc.game3();
-            case 4 -> GCD.game4();
-            case 5 -> Progression.game5();
-            case 6 -> Prime.game6();
+            case even -> Even.game2();
+            case calc -> Calc.game3();
+            case gcd -> GCD.game4();
+            case progression -> Progression.game5();
+            case prime -> Prime.game6();
             default -> {
             }
         }
