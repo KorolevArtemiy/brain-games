@@ -1,5 +1,7 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 public class Progression {
@@ -7,10 +9,17 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
         Scanner scanner = new Scanner(System.in);
 
-        for (int q = 1; q <= 3; q++) {
-            int qua = 5 + (int) (Math.random() * 10);
-            int step = 2 + (int) (Math.random() * 10);
-            int first = 2 + (int) (Math.random() * 50);
+        int quaMaxRand = 10;
+        int quaMinRand = 5;
+        int stepMaxRand = 10;
+        int stepMinRand = 2;
+        int firstMaxRand = 50;
+        int firstMinRand = 2;
+
+        for (int q = 1; q <= Engine.turns(); q++) {
+            int qua = quaMinRand + (int) (Math.random() * quaMaxRand);
+            int step = stepMinRand + (int) (Math.random() * stepMaxRand);
+            int first = firstMinRand + (int) (Math.random() * firstMaxRand);
             int skip = (int) (Math.random() * qua) * step + first;
             int max = qua * step + first;
             String ask = String.valueOf(skip);

@@ -1,4 +1,6 @@
 package hexlet.code.games;
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 public class Calc {
@@ -7,9 +9,11 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
         char[] chArray = new char[]{'+', '-', '*'};
 
-        for (int q = 1; q <= 3; q++) {
-            int value1 = (int) (Math.random() * 20);
-            int value2 = (int) (Math.random() * 20);
+        int randMax = 100;
+
+        for (int q = 1; q <= Engine.turns(); q++) {
+            int value1 = (int) (Math.random() * randMax);
+            int value2 = (int) (Math.random() * randMax);
             int index = (int) Math.floor(Math.random() * chArray.length);
 
             String ask = switch (index) {

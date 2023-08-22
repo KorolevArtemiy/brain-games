@@ -1,4 +1,6 @@
 package hexlet.code.games;
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 public class Prime {
@@ -7,8 +9,10 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         Scanner scanner = new Scanner(System.in);
 
-        for (int q = 1; q <= 3; q++) {
-            int value = (int) (Math.random() * 100);
+        int randMax = 100;
+
+        for (int q = 1; q <= Engine.turns(); q++) {
+            int value = (int) (Math.random() * randMax);
             String ask = "yes";
             if (value < 2) {
                 ask = "no";

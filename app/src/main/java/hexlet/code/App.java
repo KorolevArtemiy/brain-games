@@ -22,8 +22,8 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         int userChoice = scanner.nextInt();
-        if (0 < userChoice && userChoice < 7) {
-            Cli.name();
+        if (0 < userChoice && userChoice <= 6) {
+            Engine.name();
         }
         switch (userChoice) {
             case 2 -> Even.game2();

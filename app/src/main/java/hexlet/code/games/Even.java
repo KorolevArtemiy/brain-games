@@ -1,5 +1,7 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 public class Even {
@@ -7,8 +9,10 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         Scanner scanner = new Scanner(System.in);
 
-        for (int q = 1; q <= 3; q++) {
-            int value = (int) (Math.random() * 100);
+        int randMax = 100;
+
+        for (int q = 1; q <= Engine.turns(); q++) {
+            int value = (int) (Math.random() * randMax);
 
             String ask = "no";
             if (value % 2 == 0) {
