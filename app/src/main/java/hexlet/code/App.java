@@ -29,7 +29,7 @@ public class App {
 
         int userChoice = scanner.nextInt();
         if (0 < userChoice && userChoice <= prime) {
-            Cli.name();
+            Engine.name();
         }
         switch (userChoice) {
             case even -> Even.game2();
